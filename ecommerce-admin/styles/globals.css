@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-input, textarea{
+img{
+  max-height: 100%;
+}
+
+input, textarea, select {
   @apply border-2 border-gray-400 rounded-lg w-full px-2 py-1;
   @apply mb-2;
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus, select:focus {
   @apply border-blue-900 outline-none
 }
 
@@ -28,11 +32,11 @@ table.my-table {
 }
 
 table.my-table thead {
-  @apply bg-blue-100
+  @apply bg-blue-100 font-semibold
 }
 
 table.my-table tr td{
-  @apply border border-blue-200
+  @apply border border-blue-200 p-0.5 px-1
 }
 
 table.my-table a{
@@ -44,12 +48,12 @@ table.my-table a{
 }
 
 .btn-red{
-  @apply bg-red-800 
+  @apply bg-red-800
 }
 
 .btn-default{
   @apply bg-gray-500 
-}
+} 
 
 :root {
   --foreground-rgb: 0, 0, 0;

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Layout({ children }) {
   const { data: session } = useSession()
 
-  if (!session) {
+  if (session) {
     return (
       <div className=" w-screen h-screen bg-blue-500 text-black flex items-center justify-center">
         <div className=" text-center">

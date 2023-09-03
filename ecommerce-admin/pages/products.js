@@ -14,8 +14,12 @@ export default function Products() {
 
     return (
         <Layout>
-            <Link className="btn-primary" href={'/products/new'}>
+            <Link className="btn-primary inline-flex gap-1" href={'/products/new'}>
                 Add new Product
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+
             </Link>
             <table className="my-table">
                 <thead>
@@ -26,7 +30,7 @@ export default function Products() {
                 </thead>
                 <tbody>
                     {productList.map(product => (
-                        <tr>
+                        <tr key={product._id}>
                             <td>{product.title}</td>
                             <td>
                                 <Link href={'/products/edit/' + product._id}>

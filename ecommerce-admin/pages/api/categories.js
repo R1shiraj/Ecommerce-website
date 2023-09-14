@@ -1,10 +1,13 @@
 import { mongooseConnect } from "@/lib/mongoose";
 import { Category } from "@/models/Category";
+import { isAdminRequest } from "./auth/[...nextauth]";
 
 export default async function handle(req, res) {
     const { method } = req;
+    await isAdminRequest(req, res);
 
     if(method === "GET"){
+        await mongooseConnect();
         res.json(await Category.find().populate('parent'));
     }
 

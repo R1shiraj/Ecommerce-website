@@ -196,12 +196,12 @@ function Categories({ swal }) {
                                 <td>
                                     <button
                                         onClick={() => { editCategory(category) }}
-                                        className="btn-primary ml-2">
+                                        className="ml-2 font-semibold text-sm text-gray-600 bg-white border border-gray-200 px-3 py-1 rounded-md">
                                         Edit
                                     </button>
                                     <button
                                         onClick={() => deleteCategory(category)}
-                                        className="btn-primary ml-2">
+                                        className="ml-2 font-semibold text-sm text-red-600  bg-red-200 px-3 py-1 rounded-md">
                                         Delete
                                     </button>
                                 </td>

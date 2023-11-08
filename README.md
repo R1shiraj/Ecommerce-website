@@ -6,15 +6,15 @@ This is a guided project that i built while watching a tutorial on Youtube by Co
 
 Tech Used: 
 
-Full Stack framework - Nextjs 13.
+1) Full Stack framework - Nextjs 13.
 
-Authentication - NextAuth (Google Provider).
+2) Authentication - NextAuth (Google Provider).
 
-Styling - Tailwind CSS, Styled Components.
+3) Styling - Tailwind CSS, Styled Components.
 
-Database - MongoDB Atlas.
+4) Database - MongoDB Atlas.
 
-Image hosting - Amazon AWS S3 Bucket.
+5) Image hosting - Amazon AWS S3 Bucket.
 
-Payment Gateway - Stripe.
+6) Payment Gateway - Stripe.
 
